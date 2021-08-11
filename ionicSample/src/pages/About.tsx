@@ -1,28 +1,33 @@
-import { IonIcon,IonButton,IonLabel,IonItem,IonList,IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
-import { star } from 'ionicons/icons';
-import ExploreContainer from '../components/ExploreContainer';
-import './Home.css';
+import React from 'react';
+import { IonList,IonThumbnail,IonImg,IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonButton } from '@ionic/react';
+import { pin, wifi, wine, warning, walk } from 'ionicons/icons';
+// import { arrow-undo } from 'ionicons/icons';
+// import AboutPage from '../components/AboutPage';
+import './About.css';
+import me from '../imgs/me.jpeg';
 
-const Home: React.FC = () => {
+const About: React.FC = () => {
   return (
-    <IonPage>
-      <IonHeader>
-        <IonToolbar>
-          <IonTitle>Sample Ionic Page</IonTitle>
-        </IonToolbar>
-      </IonHeader>
+    <IonPage className ="profile">
       <IonContent fullscreen>
-        <IonHeader collapse="condense">
-          <IonToolbar>
-            <IonTitle size="large">About</IonTitle>
-          </IonToolbar>
-        </IonHeader>
-        <IonButton href='/home'>Go Back</IonButton>
-
-        <ExploreContainer />
+        <IonCard>
+          <IonCardHeader className = "titles" >
+            <IonCardSubtitle >Getting to know Samantha James</IonCardSubtitle>
+            <IonCardTitle>About Me</IonCardTitle>
+          </IonCardHeader>
+          <IonImg className="photo" src={me} alt="Samantha" />
+          <IonCardContent>
+          My name is Samantha James, an aspiring Penetration Tester and Software Developer. I am an individual who thrives off positivity in just about every aspect of my life, while also being curious, incisive, passionate, and punctilious in the things I do. 
+          In addition, I enjoy creating and exploiting vulnerabilities, watching penetration testing YouTube videos, and finding courses and communities to further develop my skill set.
+          My love for computing developed during my early high school years where my Information Technology teacher served as an instrumental catalyst for this field. 
+          She had always inspired me and showed me the benefits of not only doing well in the subject, but also the differences that I could make by choosing this career path.
+      </IonCardContent>
+        </IonCard>
+        <IonButton className="goback" href='/home'>Go Back</IonButton>
       </IonContent>
     </IonPage>
   );
 };
+    
 
-export default Home;
+export default About;
