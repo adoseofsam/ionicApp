@@ -1,4 +1,4 @@
-import { IonLabel,IonItem,IonList,IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
+import {IonButton,IonLabel,IonItem,IonList,IonContent, IonHeader, IonPage, IonTitle, IonToolbar } from '@ionic/react';
 import ExploreContainer from '../components/ExploreContainer';
 import './Home.css';
 
@@ -12,14 +12,14 @@ const Home: React.FC = () => {
       </IonHeader>
       <IonContent fullscreen>
         <IonList>
-          <IonItem routerLink = '/about'>
+        <IonItem routerLink = '/about'>
             <IonLabel>
               About
             </IonLabel>
           </IonItem>
-          <IonItem routerLink = '/programmes'>
+          <IonItem href = '/programmes'>
             <IonLabel>
-            Programmes
+              Programmes
             </IonLabel>
           </IonItem>
         </IonList>
@@ -33,5 +33,6 @@ const Home: React.FC = () => {
     </IonPage>
   );
 };
+          {/* <IonButton className="goback" href='/programmes'>Go programmes</IonButton> */}
 
 export default Home;

@@ -1,33 +1,25 @@
+import { IonToolbar,IonTitle,IonPage,IonHeader,IonButton,IonList, IonItem, IonLabel, IonInput, IonToggle, IonRadio, IonCheckbox, IonItemSliding, IonItemOption, IonItemOptions, IonContent } from '@ionic/react';
+import AboutContainer from '../components/AboutContainer';
+
 import React from 'react';
-import { IonList,IonThumbnail,IonImg,IonContent, IonHeader, IonPage, IonTitle, IonToolbar, IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent, IonButton } from '@ionic/react';
-import { pin, wifi, wine, warning, walk } from 'ionicons/icons';
-// import { arrow-undo } from 'ionicons/icons';
-// import AboutPage from '../components/AboutPage';
-import './About.css';
-import me from '../imgs/me.jpeg';
 
 const About: React.FC = () => {
   return (
-    <IonPage className ="profile">
-      <IonContent fullscreen>
-        <IonCard>
-          <IonCardHeader className = "titles" >
-            <IonCardSubtitle >Getting to know Samantha James</IonCardSubtitle>
-            <IonCardTitle>About Me</IonCardTitle>
-          </IonCardHeader>
-          <IonImg className="photo" src={me} alt="Samantha" />
-          <IonCardContent>
-          My name is Samantha James, an aspiring Penetration Tester and Software Developer. I am an individual who thrives off positivity in just about every aspect of my life, while also being curious, incisive, passionate, and punctilious in the things I do. 
-          In addition, I enjoy creating and exploiting vulnerabilities, watching penetration testing YouTube videos, and finding courses and communities to further develop my skill set.
-          My love for computing developed during my early high school years where my Information Technology teacher served as an instrumental catalyst for this field. 
-          She had always inspired me and showed me the benefits of not only doing well in the subject, but also the differences that I could make by choosing this career path.
-      </IonCardContent>
-        </IonCard>
-        <IonButton className="goback" href='/home'>Go Back</IonButton>
-      </IonContent>
-    </IonPage>
-  );
-};
-    
-
-export default About;
+      <IonPage>
+        <IonHeader>
+          <IonToolbar>
+            <IonTitle>About Me</IonTitle>
+          </IonToolbar>
+        </IonHeader>
+        <IonContent fullscreen>
+          <IonHeader collapse="condense">
+            <IonToolbar>
+              <IonTitle size="large">About Me</IonTitle>
+            </IonToolbar>
+          </IonHeader>
+          <AboutContainer />
+        </IonContent>
+      </IonPage>
+    );
+  };
+ export default About;
