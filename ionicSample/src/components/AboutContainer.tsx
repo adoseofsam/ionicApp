@@ -13,8 +13,8 @@ const AboutContainer: React.FC<ContainerProps> = () => {
           <IonContent fullscreen>
             <IonCard>
               <IonCardHeader className = "titles" >
-                <IonCardSubtitle >Getting to know Samantha James</IonCardSubtitle>
-                <IonCardTitle>About Me</IonCardTitle>
+                <IonCardSubtitle >About Me</IonCardSubtitle>
+                <IonCardTitle>Getting to know Samantha James</IonCardTitle>
               </IonCardHeader>
               <IonImg className="photo" src={me} alt="Samantha" />
               <IonCardContent>

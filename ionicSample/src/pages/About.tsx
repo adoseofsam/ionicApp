@@ -14,7 +14,7 @@ const About: React.FC = () => {
         <IonContent fullscreen>
           <IonHeader collapse="condense">
             <IonToolbar>
-              <IonTitle size="large">About Me</IonTitle>
+              {/* <IonTitle size="large">Getting to know Samantha James</IonTitle> */}
             </IonToolbar>
           </IonHeader>
           <AboutContainer />

@@ -14,7 +14,7 @@ const Programmes: React.FC = () => {
         <IonContent fullscreen>
           <IonHeader collapse="condense">
             <IonToolbar>
-              <IonTitle size="large">Programmes</IonTitle>
+              <IonTitle size="large">Home</IonTitle>
             </IonToolbar>
           </IonHeader>
           <ProgramContainer />
