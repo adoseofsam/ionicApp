@@ -7,18 +7,18 @@ interface ContainerProps { }
 
 const program = [
   {
-      scale: 'General',
-      programs: ['Computer Science Major ','Software Engineering Major']
+      scale: 'General Majors',
+      programs: ['Computer Science ', '  Software Engineering ']
   },
 
   {
-    scale: 'Bsc',
+    scale: 'Other Programs',
     programs:['Information Technology', ' Computer Studies Option', ' Software Engineering (Mobile Application Technologies']
   },
 
   {
       scale: 'Minors',
-      programs:['Computer Science', ' Software Engineering', 'Information Technology']
+      programs:['Computer Science', ' Software Engineering', ' Information Technology']
       
   }
 
@@ -40,12 +40,12 @@ const program = [
 const ProgramContainer: React.FC<ContainerProps> = () => {
   return (
     <IonContent>
-    <IonList>
+    <IonList className ='listname'>
       {
         program.map((item,x) => (
           <IonItemSliding key = {x}>
             <IonItem>
-              <IonLabel className = "lst">
+              <IonLabel color="danger">
                 <IonText key = {x}>
                   {item.scale}:
                 </IonText>
