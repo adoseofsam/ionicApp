@@ -49,7 +49,6 @@ const ProgramContainer: React.FC<ContainerProps> = () => {
                 <IonText key = {x}>
                   {item.scale}:
                 </IonText>
-                <IonText></IonText>
                 <p>{item.programs }</p>
               </IonLabel>
             </IonItem>
