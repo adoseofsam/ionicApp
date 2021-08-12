@@ -12,12 +12,12 @@ const program = [
   },
 
   {
-    scale: 'Other Programs',
+    scale: '',
     programs:['Information Technology', ' Computer Studies Option', ' Software Engineering (Mobile Application Technologies']
   },
 
   {
-      scale: 'Minors',
+      scale: 'Minors are Offered as Follows',
       programs:['Computer Science', ' Software Engineering', ' Information Technology']
       
   }
@@ -53,8 +53,10 @@ const ProgramContainer: React.FC<ContainerProps> = () => {
               </IonLabel>
             </IonItem>
           </IonItemSliding>
+
         ))
       }
+      <IonItem className="course">Course Listing</IonItem>
 
     </IonList>
 <IonButton className="goback" href='/home'>Go Back</IonButton>
