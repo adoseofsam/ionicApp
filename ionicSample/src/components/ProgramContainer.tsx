@@ -10,16 +10,19 @@ const program = [
       scale: 'General',
       programs: ['Computer Science Major ','Software Engineering Major']
   },
-  {
-      scale: 'Minor',
-      programs:['Computer Science', ' Software Engineering', 'Information Technology']
-      
-  },
 
   {
     scale: 'Bsc',
     programs:['Information Technology', ' Computer Studies Option', ' Software Engineering (Mobile Application Technologies']
+  },
+
+  {
+      scale: 'Minors',
+      programs:['Computer Science', ' Software Engineering', 'Information Technology']
+      
   }
+
+
 ];
 
 // const undergradLst = () => (
